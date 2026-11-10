@@ -1,10 +1,10 @@
 # Commit Plan: learnBase 本地模板
 
-**Workspace**: `learnbase-template` | **Date**: 2026-11-10 | **Status**: Confirmed
+**Workspace**: `learnbase-template` | **Date**: 2026-11-10 | **Status**: Implementation committed and pushed; documentation follow-up authorized
 
 ## Summary
 
-当前 HEAD 仅跟踪 README。tools/tests/Skills/specs 中的 M1、onboarding、M2 与 M3 共享实现且全部未提交，因此建议形成一个可运行的模板基线批次。这里只记录可审阅计划；实现与本地验收不依赖提交。
+计划制定时 HEAD 仅跟踪 README，M1、onboarding、M2、M3 与默认集成简化共享实现。用户授权后，62 文件模板基线已提交为 `7cd01e8` 并推送 `origin/main`。下表保留实际文件范围；第二批仅记录已完成的提交和推送结果。
 
 ## Included Files
 
@@ -40,10 +40,10 @@
 
 | Risk | Impact | Handling |
 |---|---|---|
-| 大部分实现尚未跟踪 | 只提交 README 会得到不可运行模板 | 提交时按精确文件清单包含共享依赖 |
+| 共享实现依赖 | 只提交 README 会得到不可运行模板 | 已按精确清单提交全部 62 个模板文件 |
 | 相对软链 | 宿主 discovery 依赖链接保真 | Git 保存链接；模板副本测试已核验 |
 | 历史验收快照 | 前序 ledger 记录当时基线，不能冒充当前测试 | roadmap audit 引用 M3 E-001 的最新全量回归 |
-| 发布与 Template 设置 | 尚未将本地实现发布为可用 GitHub Template | 推送、Template 启用另行安排 |
+| 发布与 Template 设置 | 代码推送不等于启用 GitHub Template | 代码已推送；Template 设置保持原状 |
 
 ## Commit Batches
 
@@ -59,3 +59,17 @@
 ## User Confirmation
 
 用户确认：2026-11-10，“先提交并推送吧”。提交/推送结果在执行后补记于本文件。
+
+## Execution Record
+
+| Item | Result |
+|---|---|
+| Implementation commit | `7cd01e865831f7cc13c3e5501f21a94690ee0958` |
+| Message | `feat: add local learning workspace with evidence and card previews` |
+| Scope | 62 files; 8 relative Skill links; no learner database or external source files |
+| Validation | 11 current implementation hashes matched; staged diff check and SDD closeout-ready passed |
+| Formatting | 新文档双空格换行改为等效反斜杠换行，移除多余 EOF 空行；实现基线字节未变 |
+| Push | `git push origin main` exited 0; local branch synchronized with origin/main after the push |
+| Remaining local files | `task_plan.md`, `findings.md`, `progress.md` intentionally excluded |
+| Documentation follow-up | Batch 2 records this result; authorized by the same commit/push request and subsequent “继续” |
+| Other external actions | No GitHub Template setting change; no Anki/nmem writes |

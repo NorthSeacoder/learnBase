@@ -28,7 +28,7 @@
 
 `default-integration-support` simplifies those defaults for personal use: Anki/nmem are supported without enable flags; setup remains local, availability is checked when used, and unavailable nmem retrieval is skipped. README documents dependencies and Anki failure behavior. The current 45-test regression suite passes after the change, including Anki without configuration, error/timeout handling, and the fresh-template workflow. Live Anki collections and host-specific nmem retrieval were not exercised; no model behavior eval is claimed. See [acceptance](../specs/default-integration-support/acceptance.md).
 
-The local worktree has not been committed or pushed. GitHub still reports this repository as `isTemplate=false`, so users cannot yet create a repository through GitHub's "Use this template" flow. Until publication is completed, the current CLI can be tried from a separate manually cloned/copied workspace.
+The template implementation was committed as `7cd01e865831f7cc13c3e5501f21a94690ee0958` (`feat: add local learning workspace with evidence and card previews`) and successfully pushed to `origin/main` on 2026-11-10, following the learner's explicit request. The 62-file baseline includes the CLI, tests, canonical Skills and host links, docs, and SDD records. Three local execution logs (`task_plan.md`, `findings.md`, `progress.md`) remain outside the commit plan. GitHub's Template setting was not changed; the last recorded value was `isTemplate=false`. A separate clone can now use the pushed implementation.
 
 ## Continuation State
 
@@ -41,4 +41,4 @@ The onboarding closeout record is in [`specs/workspace-topic-onboarding/acceptan
 ## Next Actions
 
 1. Try the delivered workflow in a separate learner workspace; establish recurring extraction limits before activating optional source adapters.
-2. Schedule commit/push and GitHub Template publication separately. The clean-template copy workflow is tested; the [commit plan](../specs/learnbase-template/commit-plan.md) remains unsubmitted.
+2. Enable GitHub's Template setting only if separately requested. Commit/push of the implementation is complete; the clean-template copy workflow is tested. See the [commit record](../specs/learnbase-template/commit-plan.md).

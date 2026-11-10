@@ -43,7 +43,8 @@
 | 架构决策 | 已完成 | DEC-001 明确替代 M3 默认关闭；未新增探测/插件框架 |
 | SDD 最终结构检查 | 已完成 | E-004：closeout-ready 退出码 0，完整文档链接检查通过 |
 | Knowledge Capture | 已完成 | 下表仅本地保存 |
-| Git/模板发布 | 延后 | 未请求 commit/push；文件范围已列入 umbrella commit plan |
+| Git 提交与推送 | 已完成 | 用户明确要求后，62 文件基线提交为 `7cd01e8` 并成功推送 `origin/main`；见 umbrella commit record |
+| GitHub Template 设置 | 延后 | 本轮未请求修改仓库 Template 设置 |
 
 ## Knowledge Capture
 
@@ -56,7 +57,7 @@
 - 最终结论：PASS；本地实现与 closeout 完成。
 - 完成依据：E-001 的 45 项测试、E-002 定点审查与编译、E-003 文档/模板卫生、E-004 SDD closeout-ready。
 - 阻塞项：无。
-- 延后项：真实 Anki/nmem 宿主实测、模型 eval、提交/推送；外部写入仍不在当前范围。
+- 延后项：真实 Anki/nmem 宿主实测、模型 eval、GitHub Template 设置；外部写入仍不在当前范围。
 - 退役结论：启用 gate 及配置已删除，不保留兼容层。
-- 提交结论：not_submitted；见 [commit plan](../learnbase-template/commit-plan.md)。
+- 提交结论：committed and pushed；实现提交 `7cd01e865831f7cc13c3e5501f21a94690ee0958` 已推送至 `origin/main`。本记录由后续文档提交补记；见 [commit record](../learnbase-template/commit-plan.md)。
 - 后续动作：无未完成实现；更丰富的来源 adapter 仍以真实反复抽取问题为条件。
