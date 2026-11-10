@@ -1,0 +1,7 @@
+schema_version = 1
+name = "My Learning Base"
+learner_id = "learner-local"
+timezone = "Asia/Shanghai"
+
+[profile]
+dimensions = []
